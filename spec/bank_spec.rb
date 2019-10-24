@@ -8,7 +8,8 @@ describe "Bank Account" do
   end
 
   it 'can deposit money' do
-    expect(subject.deposit).to eq(1000)
+    subject.deposit(1000)
+    expect(subject.balance).to eq(1000)
   end
 
 end
